@@ -11,3 +11,4 @@
 * Copie o link do repositório na plataforma da EBAC que a equipe de tutoria dará o feedback.
 
 ## Deploy
+* [Vercel](https://pratica-modulo-07.vercel.app/)
