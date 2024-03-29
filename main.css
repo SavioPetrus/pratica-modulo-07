@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    display: block;
     background-color:#4682B4;
     border: thin;
     box-shadow: 4px 2px 2px #0000005c;
@@ -30,7 +31,9 @@ h2 {
 
 
 form {
+    display: block;
     height: auto;
+    max-width: 100%;
     width: 400px;
     padding: 30px 10px;
 }
@@ -98,8 +101,7 @@ button:hover {
     color: #fff;
     display: none;
 }
-.mensagem_erroA,
-.mensagem_erroB {
+.mensagem_erroA, .mensagem_erroB {
     font-size: 12px;
     padding: 8px;
     background-color: rgb(195, 54, 54);

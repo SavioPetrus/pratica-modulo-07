@@ -13,10 +13,18 @@ form.addEventListener('submit', function (e) {
     mensagemSucesso.style.display = 'none'
 
     //verifica se os campos estão preenchidos
-    if (campoA.value == '' || campoB.value === '') {
+    if(campoA.value === '' && campoB.value === ''){
         mensagemErroA.innerText = 'Campo A vazio'
-        mensagemErroB.innerText = 'Campo B vazio'
         mensagemErroA.style.display = 'block'
+        mensagemErroB.innerText = 'Campo B vazio'
+        mensagemErroB.style.display = 'block'
+        return
+    }else if(campoA.value === '') {
+        mensagemErroA.innerText = 'Campo A vazio'
+        mensagemErroA.style.display = 'block'
+        return
+    }else if(campoB.value === ''){
+        mensagemErroB.innerText = 'Campo B vazio'
         mensagemErroB.style.display = 'block'
         return
     }
